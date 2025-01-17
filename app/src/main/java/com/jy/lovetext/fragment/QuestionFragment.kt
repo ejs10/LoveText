@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.jy.lovetext.R
@@ -34,7 +35,7 @@ class QuestionFragment : Fragment(),View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btn_next = view.findViewById<Button>(R.id.btn_next)
+        val btn_next = view.findViewById<ImageView>(R.id.btn_next)
 
         navController = Navigation.findNavController(view)
 

@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -34,11 +36,11 @@ class SelectionFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btn_back = view.findViewById<Button>(R.id.btn_back)
-        val option_1 = view.findViewById<Button>(R.id.option_1)
-        val option_2 = view.findViewById<Button>(R.id.option_2)
-        val option_3 = view.findViewById<Button>(R.id.option_3)
-        val option_4 = view.findViewById<Button>(R.id.option_4)
+        val btn_back = view.findViewById<ImageView>(R.id.btn_back)
+        val option_1 = view.findViewById<TextView>(R.id.option_1)
+        val option_2 = view.findViewById<TextView>(R.id.option_2)
+        val option_3 = view.findViewById<TextView>(R.id.option_3)
+        val option_4 = view.findViewById<TextView>(R.id.option_4)
 
         navController = Navigation.findNavController(view)
 
